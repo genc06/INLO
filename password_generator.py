@@ -24,7 +24,7 @@ class PasswordGenerator:
         # mdp_avec = mdp_sans.capitalize() + chiffre
         return mdp_sans.capitalize() + chiffre
 
-    def mdp_encore_plus_robuste(self)
+    def mdp_encore_plus_robuste(self):
         mdp_sans = "motdepasse"
         chiffre = "3"
         char = "@"
