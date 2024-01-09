@@ -31,3 +31,18 @@ class PasswordGenerator:
         char = "@"
         #mdp_robuste = char + mdp_sans.capitalize() + chiffre 
         return char + mdp_sans.capitalize() + chiffre 
+    
+    def combinaison_pwd_complexe(self):
+        letters = string.ascii_letters
+        digits = string.digits
+        special_chars = "@#$%^&*()_+=-<>?!"
+        all_chars = letters + digits + special_chars
+        length = random.randint(10, 15)  
+        complex_pwd = ''.join(random.choice(all_chars) for _ in range(length))
+        return complex_pwd
+
+    def check_complexity(self, password):
+    
+        return any(char.isdigit() for char in password) \
+            and any(char.isupper() for char in password) \
+            and any(char in "@#$%^&*()_+=-<>?!" for char in password)
