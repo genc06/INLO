@@ -7,11 +7,26 @@ class PasswordGenerator:
 
     
     def generate_password(self):
-        #1 return " "
-        #2 return 'motdepasse'
-        #3 /refactor moment/
-        #4 return robusterator_de_mot_de_passe()
+        # return " "
+        return 'motdepasse'
+        # /refactor moment/
+        # return robusterator_de_mot_de_passe()
         
-# def robusterator_de_mot_de_passe():
-        #mot_de_passe = "motdepasse"
-    # return mot_de_passe
+    def robusterator_de_mot_de_passe(self):
+        # return "motdepasse3"
+        mdp_sans = "motdepasse"
+        chiffre = "3"
+        return mdp_sans + chiffre
+    
+    def mot_de_passe_plus_robuste(self):
+        mdp_sans = "motdepasse"
+        chiffre = "3"
+        # mdp_avec = mdp_sans.capitalize() + chiffre
+        return mdp_sans.capitalize() + chiffre
+
+    def mdp_encore_plus_robuste(self)
+        mdp_sans = "motdepasse"
+        chiffre = "3"
+        char = "@"
+        #mdp_robuste = char + mdp_sans.capitalize() + chiffre 
+        return char + mdp_sans.capitalize() + chiffre 
