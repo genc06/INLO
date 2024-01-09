@@ -16,6 +16,7 @@ class PasswordGenerator:
         # return "motdepasse3"
         mdp_sans = "motdepasse"
         chiffre = "3"
+        # mdp_avec = mdp_sans + chiffre
         return mdp_sans + chiffre
     
     def mot_de_passe_plus_robuste(self):
