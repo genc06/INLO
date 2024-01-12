@@ -1,7 +1,6 @@
 
-
-
-
+import random
+import string
 
 class PasswordGenerator:
 
@@ -33,12 +32,12 @@ class PasswordGenerator:
         return char + mdp_sans.capitalize() + chiffre 
     
     def combinaison_pwd_complexe(self):
-        letters = string.ascii_letters
-        digits = string.digits
-        special_chars = "@#$%^&*()_+=-<>?!"
-        all_chars = letters + digits + special_chars
-        length = random.randint(10, 15)  
-        complex_pwd = ''.join(random.choice(all_chars) for _ in range(length))
+        lettres = string.ascii_letters
+        nums = string.digits
+        special_char = "@#$%^&*()_+=-<>?!"
+        all_chars = lettres + nums + special_char
+        lng_spec = random.randint(10, 15)  
+        complex_pwd = ''.join(random.choice(all_chars) for _ in range(lng_spec))
         return complex_pwd
 
     def check_complexity(self, password):
