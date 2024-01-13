@@ -6,10 +6,10 @@ class PasswordGenerator:
 
     
     def generate_password(self):
-        # return " "
+        return " "
         return 'motdepasse'
-        # /refactor moment/
-        # return robusterator_de_mot_de_passe()
+        /refactor moment/
+        return robusterator_de_mot_de_passe()
         
     def robusterator_de_mot_de_passe(self):
         # return "motdepasse3"
