@@ -3,14 +3,25 @@ import random
 import string
 
 class PasswordGenerator:
+    def generate_password(self, length=12):
+        char = string.ascii_letters + string.digits + string.punctuation
+        pwd = ''.join(random.choice(char) for _ in range(length))
 
-    
-    def generate_password(self):
-        return " "
-        return 'motdepasse'
-        /refactor moment/
-        return robusterator_de_mot_de_passe()
         
+        while pwd == self.previous_password:
+            pwd = ''.join(random.choice(char) for _ in range(length))
+
+        self.previous_password = pwd
+        return pwd
+    
+    def generate_password_red(self):
+        return " "
+        
+        
+    def generate_password_green(self):
+        return 'motdepasse'
+    
+    
     def robusterator_de_mot_de_passe(self):
         # return "motdepasse3"
         mdp_sans = "motdepasse"

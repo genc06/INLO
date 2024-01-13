@@ -4,9 +4,13 @@ from password_generator import PasswordGenerator
 
 class TestPwdGenerator(unittest.TestCase):
 
-    def test_basic_pwd_only_strings(self):
+    def test_basic_pwd_only_strings_red(self):
         gen_pwd = PasswordGenerator()
-        self.assertEqual(gen_pwd.generate_password(),"motdepasse")
+        self.assertEqual(gen_pwd.generate_password_red(),"motdepasse")
+    
+    def test_basic_pwd_only_strings_green(self):
+        gen_pwd = PasswordGenerator()
+        self.assertEqual(gen_pwd.generate_password_green(),"motdepasse")
 
     def test_basic_pwd_strings_n_numbers(self):
         gen_pwd = PasswordGenerator()
@@ -32,7 +36,23 @@ class TestPwdGenerator(unittest.TestCase):
         complex_pwd1 = gen_pwd.combinaison_pwd_complexe()
         complex_pwd2 = gen_pwd.combinaison_pwd_complexe()
         self.assertNotEqual(complex_pwd1, complex_pwd2)
+    def test_generate_password_with_special_chars_red():
+        generator = PasswordGenerator()
+        password = generator.generate_password()
+        assert any(char in string.punctuation for char in password)
 
+
+    def test_generate_password_with_special_chars_green():
+        generator = PasswordGenerator()
+        password = generator.generate_password()
+        assert any(char in string.punctuation for char in password)
+
+
+    def test_generate_password_complex_combination_green_refactor():
+        generator = PasswordGenerator()
+        password = generator.generate_password()
+        assert any(char.isdigit() for char in password) and any(char.isupper() for char in password) and any(char in string.punctuation for char in password)
+    
 
 
 

@@ -21,25 +21,47 @@ La méthode compare les deux mots de passe générés successivement et s'assure
 
 
 Décrire les différentes étapes (10ét.) ;
+
 Basique – renvoyer une chaine de caractères (test= red)
+
 Basique – renvoyer une chaine de caractères (test= green)
+
 Basique – renvoyer une chaine de caractères /avec refactor si possible/ (test = green)
+
 Basique – renvoyer une chaine de caractères avec au moins 1 chiffre (test = red)
+
 Basique – renvoyer une chaine de caractères avec au moins 1 chiffre (test = green)
+
 Basique – renvoyer une chaine de caractères avec au moins 1 chiffre /avec refactor si possible/ (test= red)
+
 Avancé – renvoyer une chaine de caractères avec au moins 1 chiffre et inclure une majuscule (test = red)
+
 Avancé – renvoyer une chaine de caractères avec au moins 1 chiffre et inclure une majuscule (test = green)
+
 Avancé – renvoyer une chaine de caractères avec au moins 1 chiffre et inclure une majuscule /avec refactor si possible/ (test = green)
+
  Avancé – Ajouter la couche supérieure de caractères spéciaux (test = red)
+
 Avancé – Ajouter la couche supérieure de caractères spéciaux (test = green)
+
 Avancé – Ajouter la couche supérieure de caractères spéciaux /avec refactor si possible/ (test = green)
+
 Avancé – Faire une combinaison complexe afin de générer des MDP assez complexes (test = red)
+
 Avancé – Faire une combinaison complexe afin de générer des MDP assez complexes (test = green)
+
 Avancé – Faire une combinaison complexe afin de générer des MDP assez complexes spéciaux /avec refactor si possible/ (test = green)
+
  Avancé – S’assurer que notre méthode génère des MDP différents à chaque demande (test = red)
+
 Avancé – S’assurer que notre méthode génère des MDP différents à chaque demande (test = green)
+
 Avancé – S’assurer que notre méthode génère des MDP différents à chaque demande (test = green)
+
 Avancé – S’assurer que notre méthode génère des MDP différents à chaque demande /avec refactor si possible/ (test = green)
+
  Finale – La méthode compare deux MDP successifs et s’assure de leur différences (test = red)
+
 Finale – La méthode compare deux MDP successifs et s’assure de leur différences (test = green)
+
 Finale – La méthode compare deux MDP successifs et s’assure de leur différences /avec refactor si possible/ (test = green)
