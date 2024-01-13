@@ -1,3 +1,4 @@
+import string
 import unittest
 from password_generator import PasswordGenerator
 
@@ -12,14 +13,24 @@ class TestPwdGenerator(unittest.TestCase):
         gen_pwd = PasswordGenerator()
         self.assertEqual(gen_pwd.generate_password_green(),"motdepasse")
 
-    def test_basic_pwd_strings_n_numbers(self):
+    def test_basic_pwd_strings_n_numbers_red(self):
         gen_pwd = PasswordGenerator()
-        self.assertEqual(gen_pwd.robusterator_de_mot_de_passe(),"motdepasse3") 
-
-    def test_basic_pwd_strings_n_numbers_caps(self):
+        self.assertEqual(gen_pwd.robusterator_de_mot_de_passe_red(),"motdepasse") 
+    
+    def test_basic_pwd_strings_n_numbers_green(self):
         gen_pwd = PasswordGenerator()
-        self.assertEqual(gen_pwd.mot_de_passe_plus_robuste(),"Motdepasse3")
+        self.assertEqual(gen_pwd.robusterator_de_mot_de_passe_green(),"motdepasse3") 
 
+    def test_basic_pwd_strings_n_numbers_caps_red(self):
+        gen_pwd = PasswordGenerator()
+        self.assertEqual(gen_pwd.mot_de_passe_plus_robuste_red(),"motdepasse3")
+
+    def test_basic_pwd_strings_n_numbers_caps_green(self):
+        gen_pwd = PasswordGenerator()
+        self.assertEqual(gen_pwd.mot_de_passe_plus_robuste_green(),"Motdepasse3")
+    def test_basic_pwd_strings_n_numbers_caps_n_special_chars_red(self):
+        gen_pwd = PasswordGenerator()
+        self.assertEqual(gen_pwd.mdp_encore_plus_robuste_red(),"@Motdepasse3")
     def test_generate_different_passwords_successively(self):
         gen_pwd = PasswordGenerator()
         pwd1 = gen_pwd.generate_password()
